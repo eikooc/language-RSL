@@ -1,0 +1,24 @@
+'scopeName': 'source.rsl'
+'name': 'RSL'
+'fileTypes': [
+  'rsl'
+]
+'firstLineMatch': '^scheme'
+'patterns': [
+  {
+    'match': '\\b[A-Z]+\\b(?=\\s=)'
+    'name': 'storage.modifier.rsl'
+  }
+  {
+    'match': '\\b[A-Z][A-Za-z0-9]*'
+    'name': 'variable.assignment.rsl'
+  }
+  {
+    'match': '\\b(scheme|class|type|value|let|end|-set|all|exists|is|in|isin)\\b'
+    'name': 'support.function.rsl'
+  }
+  {
+    'match': '\\b[a-z_]*(?=[\:\(])'
+    'name': 'entity.name.function.rsl'
+  }
+]

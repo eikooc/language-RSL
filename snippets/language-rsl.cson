@@ -1,0 +1,7 @@
+'.source.rsl':
+  'setup':
+    'prefix': 'rsl'
+    'body': 'scheme ${1:TITLE} = \n\tclass\n\t\ttype\n\t\t${2:# types...}\n\n\t\tvalue\n\t\t${3:# values...}\n\n\tend\n'
+  'let':
+    'prefix': 'let'
+    'body': 'let (${1}) = ${2}\n\t(${3})\nend'
