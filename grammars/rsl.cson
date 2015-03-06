@@ -6,6 +6,22 @@
 'firstLineMatch': '^scheme'
 'patterns': [
   {
+    'begin': '/\\*'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.rsl'
+    'end': '\\*/'
+    'name': 'comment.b  lock.rsl'
+  }
+  {
+    'match': '\\b(scheme|class|type|value|end|-set)\\b'
+    'name': 'support.function.construct.rsl'
+  }
+  {
+    'match': '\\b(let|-set|all|exists|is|in|isin)\\b'
+    'name': 'support.function.basic_functions.rsl'
+  }
+  {
     'match': '\\b[A-Z]+\\b(?=\\s=)'
     'name': 'storage.modifier.rsl'
   }
@@ -14,11 +30,7 @@
     'name': 'variable.assignment.rsl'
   }
   {
-    'match': '\\b(scheme|class|type|value|let|end|-set|all|exists|is|in|isin)\\b'
-    'name': 'support.function.rsl'
-  }
-  {
-    'match': '\\b[a-z_]*(?=[\:\(])'
+    'match': '\\b[a-z]+\\w*\\s*(?=[:(])'
     'name': 'entity.name.function.rsl'
   }
 ]
