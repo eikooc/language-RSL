@@ -11,26 +11,36 @@
       '0':
         'name': 'punctuation.definition.comment.rsl'
     'end': '\\*/'
-    'name': 'comment.b  lock.rsl'
+    'name': 'comment.line.rsl'
   }
   {
-    'match': '\\b(scheme|class|type|value|end|-set)\\b'
+    'match': '\\b(scheme|class|type|value|end|let|-set|-infset|-list|-inflist)\\b'
     'name': 'support.function.construct.rsl'
   }
   {
-    'match': '\\b(let|-set|all|exists|is|in|isin)\\b'
-    'name': 'support.function.basic_functions.rsl'
+    'match': '\\b(all|always|exists|is|in|isin|\\~isin|inter|union|\\:\\-|\\-\\\\)\\b'
+    'name': 'entity.name.function.rsl'
+    'comment': 'Can these be overloaded? Or what are they?'
   }
   {
-    'match': '\\b[A-Z]+\\b(?=\\s=)'
+    'match': '(\\~|\\/\\\\|\\=|\\>|\\<|\\<\\.|\\|\\||\\.\\>|\\!\\!)'
+    'name': 'keyword.operator.logical.rsl'
+    'comment': 'logical operators. Can these be overloaded?'
+  }
+  {
+    'match': '(\\-\\>|\\>\\<|\\-m\\-\\>)'
     'name': 'storage.modifier.rsl'
+  }
+  {
+    'match': '(?i)\\b(TRUE|FALSE|NULL|CHAOS)\\b'
+    'name': 'constant.language.rsl'
   }
   {
     'match': '\\b[A-Z][A-Za-z0-9]*'
     'name': 'variable.assignment.rsl'
   }
   {
-    'match': '\\b[a-z]+\\w*\\s*(?=[:(])'
+    'match': '\\s(^|\\s)+\\w+\\s*(?=[:(])'
     'name': 'entity.name.function.rsl'
   }
 ]

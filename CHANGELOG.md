@@ -1,3 +1,13 @@
+## 0.27.0 - fixing problems
+* Fixed some grammar issues
+
+## 0.26.0 - this was a test
+* Just an error actually
+
+## 0.25.0 - More corrections
+* Changed some grammars
+* Fixed some settings
+
 ## 0.23.0 - Correcting stuff
 * More syntax added
 * Major rewriting of code
