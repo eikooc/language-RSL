@@ -1,3 +1,7 @@
+## 0.28.0 - add more keywords to the grammar
+* Added boolean keywords
+* And others..
+
 ## 0.27.0 - fixing problems
 * Fixed some grammar issues
 

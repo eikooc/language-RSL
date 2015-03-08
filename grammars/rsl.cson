@@ -18,18 +18,23 @@
     'name': 'support.function.construct.rsl'
   }
   {
-    'match': '\\b(all|always|exists|is|in|isin|\\~isin|inter|union|\\:\\-|\\-\\\\)\\b'
+    'match': '(\\-\\>|\\>\\<|\\-m\\-\\>)'
+    'name': 'storage.modifier.rsl'
+  }
+  {
+    'match': '\\b(all|always|exists|is|in|isin|inter|union)\\b'
     'name': 'entity.name.function.rsl'
     'comment': 'Can these be overloaded? Or what are they?'
   }
   {
-    'match': '(\\~|\\/\\\\|\\=|\\>|\\<|\\<\\.|\\|\\||\\.\\>|\\!\\!)'
-    'name': 'keyword.operator.logical.rsl'
-    'comment': 'logical operators. Can these be overloaded?'
+    'match': '(\\:\\-|\\-\\\\)'
+    'name': 'entity.name.function.rsl'
+    'comment': 'Can these be overloaded? Or what are they?'
   }
   {
-    'match': '(\\-\\>|\\>\\<|\\-m\\-\\>)'
-    'name': 'storage.modifier.rsl'
+    'match': '(\\~|\\/\\\\|\\\\\\/|\\=|\\>|\\<|\\<\\.|\\|\\||\\.\\>|\\!\\!|\\<\\-\\>)'
+    'name': 'keyword.operator.logical.rsl'
+    'comment': 'logical operators. Can these be overloaded?'
   }
   {
     'match': '(?i)\\b(TRUE|FALSE|NULL|CHAOS)\\b'
