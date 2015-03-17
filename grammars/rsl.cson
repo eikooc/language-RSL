@@ -18,7 +18,7 @@
     'name': 'comment.line.rsl'
   }
   {
-    'match': '\\b(scheme|class|type|value|end|test_case|case|of|extend|with|if|then|else|let|-set|-infset|-list|-inflist)\\b'
+    'match': '\\b(scheme|class|type|value|end|test_case|case|of|extend|with|post|pre|if|then|else|let|-set|-infset|-list|-inflist)\\b'
     'name': 'support.function.construct.rsl'
   }
   {
