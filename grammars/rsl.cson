@@ -11,10 +11,14 @@
       '0':
         'name': 'punctuation.definition.comment.rsl'
     'end': '\\*/'
+    'name': 'comment.block.rsl'
+  }
+  {
+    'match': '(\-\-).*'
     'name': 'comment.line.rsl'
   }
   {
-    'match': '\\b(scheme|class|type|value|end|let|-set|-infset|-list|-inflist)\\b'
+    'match': '\\b(scheme|class|type|value|end|test_case|case|of|extend|with|if|then|else|let|-set|-infset|-list|-inflist)\\b'
     'name': 'support.function.construct.rsl'
   }
   {
@@ -46,6 +50,10 @@
   }
   {
     'match': '\\s(^|\\s)+\\w+\\s*(?=[:(])'
+    'name': 'entity.name.function.rsl'
+  }
+  {
+    'match': '[a-z]*[A-Z]*\\w+(?=[(])'
     'name': 'entity.name.function.rsl'
   }
 ]

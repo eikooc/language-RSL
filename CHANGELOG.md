@@ -1,3 +1,7 @@
+## 0.29.0 - add better matching to the functions
+* Added better function recognition
+* Fixed more grammar issues
+
 ## 0.28.0 - add more keywords to the grammar
 * Added boolean keywords
 * And others..
