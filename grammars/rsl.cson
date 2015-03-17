@@ -22,16 +22,16 @@
     'name': 'support.function.construct.rsl'
   }
   {
-    'match': '(\\-\\>|\\>\\<|\\-m\\-\\>)'
+    'match': '(\\-\\>|\\>\\<|\\-m\\-\\>|\\-\\~\\-\\>)'
     'name': 'storage.modifier.rsl'
   }
   {
-    'match': '\\b(all|always|exists|is|in|isin|inter|union)\\b'
+    'match': '(\\:\\-|\\-\\\\)'
     'name': 'entity.name.function.rsl'
     'comment': 'Can these be overloaded? Or what are they?'
   }
   {
-    'match': '(\\:\\-|\\-\\\\)'
+    'match': '\\b(all|always|exists|is|in|isin|inter|union)\\b'
     'name': 'entity.name.function.rsl'
     'comment': 'Can these be overloaded? Or what are they?'
   }

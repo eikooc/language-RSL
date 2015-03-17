@@ -5,3 +5,6 @@
   'let':
     'prefix': 'let'
     'body': 'let (${1}) = ${2}\n\t(${3})\nend'
+  'if'
+    'prefix': 'if'
+    'body': 'if (${1:/*boolean expression*/}) then\n\t(${2:-- expression})\nelse\n\t${3:-- else statement}\nend'
