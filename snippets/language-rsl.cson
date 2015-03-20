@@ -4,7 +4,7 @@
     'body': 'scheme ${1:TITLE} = \n\tclass\n\t\ttype\n\t\t${2:-- types...}\n\n\t\tvalue\n\t\t${3:-- values...}\n\nend\n'
   'let':
     'prefix': 'let'
-    'body': 'let (${1}) = ${2}\n\t(${3})\nend'
+    'body': 'let ${1} = ${2} in\n\t(${3})\nend'
   'if':
     'prefix': 'if'
-    'body': 'if (${1:/*boolean expression*/}) then\n\t(${2:-- expression})\nelse\n\t${3:-- else statement}\nend'
+    'body': 'if (${1:/*boolean expression*/}) then\n\t(${2:/*statement}*/)\nelse\n\t${3:/*statement*/}\nend'
