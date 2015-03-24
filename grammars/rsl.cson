@@ -31,7 +31,7 @@
     'comment': 'Can these be overloaded? Or what are they?'
   }
   {
-    'match': '\\b(all|always|exists|is|in|isin|inter|union)\\b'
+    'match': '\\b(all|always|exists|is|in|isin|inter|union|len|hd|tl|abs|int|real|card|inds|elems|dom|rng)\\b'
     'name': 'entity.name.function.rsl'
     'comment': 'Can these be overloaded? Or what are they?'
   }
