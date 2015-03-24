@@ -8,3 +8,6 @@
   'if':
     'prefix': 'if'
     'body': 'if (${1:/*boolean expression*/}) then\n\t(${2:/*statement}*/)\nelse\n\t${3:/*statement*/}\nend'
+  'if':
+    'prefix': 'comp'
+    'body': '{ ${3:/* value_expr */} | ${1:/* x : Type */} :- ${2:/* logical_expr */} }'
