@@ -1,7 +1,7 @@
 {
   "name": "language-RSL",
   "main": "./lib/language-RSL",
-  "version": "0.30.0",
+  "version": "0.31.0",
   "description": "Language syntax for RSL and snippets",
   "repository": "https://github.com/eikooc/language-RSL",
   "license": "MIT",
