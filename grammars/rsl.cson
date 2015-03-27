@@ -15,42 +15,65 @@
     'comment': 'Block comments'
   }
   {
-    'match': '(\-\-).*'
+    'match': '(\\-\\-).*'
     'name': 'comment.line.rsl'
     'comment': 'Line comments'
   }
+    {
+      'match': '\\b(scheme|object|class|type|variable|value|axiom|end|test_case|extend|with|post|pre)\\b'
+      'name': 'support.class.construct.rsl'
+    }
   {
-    'match': '\\b(scheme|class|type|value|end|test_case|case|of|extend|with|post|pre|if|then|else|elsif|let|-set|-infset|-list|-inflist)\\b'
+    'match': '\\b(case|as|of|skip|hide|write|read|if|then|else|elsif|let)\\b'
     'name': 'support.function.construct.rsl'
-
+  }
+  {
+    'match': '(-set|-infset|-list|-inflist)'
+    'name': 'support.variable.rsl'
   }
   {
     'match': '(\\-\\>|\\>\\<|\\-m\\-\\>|\\-\\~\\-\\>)'
     'name': 'storage.modifier.rsl'
   }
   {
-    'match': '(\\:\\-|\\-\\\\)'
+    'match': '(\\:\\-|\\-\\\\|\\!\\!)'
     'name': 'entity.name.function.rsl'
   }
   {
-    'match': '\\b(all|always|exists|is|in|isin|inter|union|len|hd|tl|abs|int|real|card|inds|elems|dom|rng)\\b'
+    'match': '\\b(all|always|exists|is|in|isin|inter|union)\\b'
+    'name': 'entity.name.function'
+  }
+  {
+    'match': '\\b(len|hd|tl|abs|int|real|card|inds|elems|dom|rng)\\b'
     'name': 'entity.name.function.rsl'
   }
   {
-    'match': '(\\~|\\/\\\\|\\\\\\/|\\=|\\>|\\<|\\<\\.|\\|\\||\\.\\>|\\!\\!|\\<\\-\\>)'
+    'match': '(\\~|\\/\\\\|\\\\\\/|\\=|\\<|\\>)'
     'name': 'keyword.operator.logical.rsl'
   }
   {
-    'match': '(?i)\\b(TRUE|FALSE|NULL|CHAOS)\\b'
+    'match': '(\\<\\.|\\|\\||\\.\\>|\\<\\-\\>)'
+    'name': 'keyword.operator.other.rsl'
+  }
+  {
+    'match': '\\b(true|false|null|chaos)\\b'
     'name': 'constant.language.rsl'
   }
   {
-    'match': '\\b[A-Z][A-Za-z0-9]*'
+    'match': '\\b(Unit|Int|Nat|Real|Bool|Char|Text)\\b'
+    'name': 'variable.language.rsl'
+  }
+  {
+    'match': '\\b[A-Z][A-Za-z0-9_]*'
     'name': 'variable.assignment.rsl'
   }
   {
     'match': '[^|\\s]+\\w+\\s*(?=[:(])'
     'name': 'entity.name.function.rsl'
+  }
+  {
+    'match': '(\\+|\\*\\*|\\*|\\-\\|\\/)'
+    'name': 'keyword.operator.arithmetic.rsl'
   }
 
 ]

@@ -1,6 +1,7 @@
 '.source.rsl':
   'editor':
-    'foldEndPattern': '(\\*/|^\\s*(\\}|\\]|\\)))'
-    'increaseIndentPattern': '^.*(\\{\\}?|\\(\\)?|class|value|let|if|then|else|elsif)\\s*$'
+    'foldEndPattern': '(\\*/|end|^\\s*(\\}|\\]|\\)))'
+    'indentNextLinePattern': '\\[.*\\]'
+    'increaseIndentPattern': '^.*(\\{\\}?|\\(\\)?|scheme|class|object|type|test_case|axiom|value|let|if|then|else|elsif)\\s*$'
     'decreaseIndentPattern': '^\\s*(\\}|end|\\))'
-    'commentStart': '\\/\\* '
+    'commentStart': '(\\/\\*|\\-\\-)'

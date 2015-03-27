@@ -1,3 +1,7 @@
+## 0.31.0 - refactor code
+* Refactor a lot of code
+* change some behaviour of syntax
+
 ## 0.29.0 - add better matching to the functions
 * Added better function recognition
 * Fixed more grammar issues
